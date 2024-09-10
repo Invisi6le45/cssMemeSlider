@@ -105,4 +105,8 @@
 .body_slaider_card_property_nav_round:click {
   background-color: blueviolet;
   cursor: pointer;
+
+  .body_slaider_card:nth-child(2) {
+    display: none;
+  }
 }
