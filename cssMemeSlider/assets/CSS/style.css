@@ -32,7 +32,7 @@ input[name="mem"] {
 
 .card_description {
   width: 90%;
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -42,7 +42,7 @@ input[name="mem"] {
 }
 
 .card_description_nav {
-  position: absolute;
+  position: fixed;
   bottom: 65px;
   right: 50px;
   display: flex;
@@ -107,4 +107,8 @@ input[name="mem"] {
  
  #mem4:checked ~ .active {
    margin-left: -75%;
+ }
+
+ #mem4:checked ~ .active_4 {
+  bottom: 28px;
  }
