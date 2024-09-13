@@ -1,0 +1,195 @@
+*, h2 {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #333;
+}
+
+input[name="mem"] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slaider {
+  display: block;
+  overflow: hidden;
+}
+
+
+.slaider_cards {
+  width: 400%; 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+
+.card {
+  width: 25%; 
+  height: 70vh;
+  padding-top: 50px;
+  transition: all 1s ease;
+  /* border: solid 1px blue; */
+}
+
+
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* border: solid 1px red; */
+}
+
+.card_content_img {
+  width: 100%;
+  height: 100%;
+  
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+
+  /* border: solid 1px yellowgreen; */
+} 
+
+.card_content_img_mem1 {
+  background-image: url("../IMG/May_the_force_be_with_you.jfif");
+}
+
+.card_content_img_mem2 {
+  background-image: url("../IMG/79d665b0-d64a-46e1-9593-03cf8442f9e9.jfif");
+}
+
+.card_content_img_mem3 {
+  background-image: url("../IMG/Don_worry_be_happy.jfif");
+}
+
+.card_content_img_mem4 {
+  background-image: url("../IMG/Your_father_Luke.jfif");
+}
+
+
+
+.card_description {
+  margin-top: 10px;
+  width: 25%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+
+.nav {
+  position: fixed;
+  bottom: 21%;
+  right: 37%;
+  display: flex;
+  gap: 0 5px;
+}
+
+
+.nav_label {
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  border: solid 2px cornflowerblue;
+  border-radius: 50%;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+
+.nav_label:hover {
+  border: solid 2px #fff;
+}
+
+
+
+
+
+
+
+
+
+#mem1:checked ~ .active {
+  margin-left: 0%;
+ }
+ 
+ #mem2:checked ~ .active {
+   margin-left: -25%;
+ }
+ 
+ #mem3:checked ~ .active {
+   margin-left: -50%;
+ }
+ 
+ #mem4:checked ~ .active {
+   margin-left: -75%;
+ }
+
+
+
+@media (max-width: 1500px) {
+
+  .card_description {
+    width: 40%;
+  }
+
+
+
+  .nav {
+    bottom: 20.5%;
+    right: 30%;
+  } 
+}
+
+
+
+@media (max-width: 1260px) {
+
+  .card_description {
+    width: 50%;
+  }
+
+  .nav {
+    bottom: 20.5%;
+    right: 25%;
+  } 
+}
+
+
+@media (max-width: 900px) {
+
+  .card_description {
+    width: 80%;
+  }
+
+  .nav {
+    bottom: 20.5%;
+    right: 10%;
+  } 
+}
+
+@media (max-width: 762px) {
+
+  .card_description {
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav {
+    bottom: 23%;
+    right: 50%;
+    transform: translate(50%);
+  } 
+}
